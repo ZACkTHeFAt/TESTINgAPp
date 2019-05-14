@@ -52,4 +52,12 @@ def say_name(name):
 	f.close()
 	return "{} clicked this link".format(name)
 
+@app.route("/malware/<name>")
+def say_name2(name):
+	print("{} clicked this link".format(name))
+	f = open('NAMEsVISITEd.txt','a+')
+	f.write(name + '\n')
+	f.close()
+	return "{} clicked this link".format(name)
+
 app.run(debug=False,host='0.0.0.0',port=os.environ.get("PORT",33507))
