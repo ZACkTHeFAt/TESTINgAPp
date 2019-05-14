@@ -51,4 +51,4 @@ def say_name(name):
 	f.close()
 	return "{} clicked this link".format(name)
 
-app.run()
+app.run(debug=False,host='0.0.0.0',port=os.environ.get("PORT",33507))
