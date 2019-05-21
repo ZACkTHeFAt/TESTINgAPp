@@ -19,7 +19,7 @@ def hello():
     return "HELLO :)"
 
 @app.route("/EYY-OOO")
-def hello():
+def hello3():
     print("Someone clicked this link!")
     return "EYY-OOO WHAT'S UP?"
 
@@ -58,7 +58,7 @@ def say_name(name):
 	f.close()
 	return "{} clicked this link".format(name)
 
-@app.route("/malware/<name>")
+@app.route("/malware3/<name>")
 def say_name2(name):
 	print("{} clicked this link".format(name))
 	f = open('NAMEsVISITEd.txt','a+')
