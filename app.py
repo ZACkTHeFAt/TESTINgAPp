@@ -18,6 +18,12 @@ def hello():
     print("Someone clicked this link!")
     return "HELLO :)"
 
+@app.route("/EYY-OOO")
+def hello():
+    print("Someone clicked this link!")
+    return "EYY-OOO WHAT'S UP?"
+
+
 @app.route("/goodbye")
 def goodbye():
     print("Someone clicked this link!")
